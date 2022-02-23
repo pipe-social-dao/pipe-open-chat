@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "allowJs": false,
+        "jsx": "react",
+        "strict": true,
+        "baseUrl": "./",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+    },
+    "include": ["src/pipe_oc_assets/**/*"],
+    "exclude": [],
+}
