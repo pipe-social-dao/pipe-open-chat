@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { APP_TITLE } from './constants'
 import startup from './startup'
 import './css/index.css'
+import AppRoot from './components/AppRoot'
 
 
 if(process.env.NODE_ENV === 'development'){
@@ -11,4 +12,4 @@ if(process.env.NODE_ENV === 'development'){
 }
 
 document.title = APP_TITLE
-startup().then(()=> ReactDOM.render(<><div><h1>PIPE - pipe</h1></div></>,document.getElementById('app')))
+startup().then(()=> ReactDOM.render(<AppRoot/>,document.getElementById('app')))
