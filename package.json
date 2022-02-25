@@ -21,6 +21,7 @@
     "@dfinity/principal": "0.10.3",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "@types/react-redux": "^7.1.22",
     "assert": "2.0.0",
     "buffer": "6.0.3",
     "copy-webpack-plugin": "^9.0.1",
@@ -28,6 +29,7 @@
     "events": "3.3.0",
     "html-webpack-plugin": "5.5.0",
     "process": "0.11.10",
+    "redux-devtools": "^3.7.0",
     "stream-browserify": "3.0.0",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "5.2.5",
@@ -45,7 +47,12 @@
     "last 2 edge version"
   ],
   "dependencies": {
+    "immer": "^9.0.12",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1"
   }
 }
