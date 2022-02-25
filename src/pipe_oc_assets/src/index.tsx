@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { APP_TITLE } from './constants'
 import startup from './startup'
-import '../css/index.css'
+import './css/index.css'
 
 
 if(process.env.NODE_ENV === 'development'){
