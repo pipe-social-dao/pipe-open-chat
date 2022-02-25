@@ -42,6 +42,8 @@ const frontendDirectory = "pipe_oc_assets";
 
 const asset_entry = path.join("src", frontendDirectory, "src", "index.html");
 
+const sourceDir = path.join(__dirname, "src/pipe_oc_assets");
+
 module.exports = {
   target: "web",
   mode: isDevelopment ? "development" : "production",
@@ -80,9 +82,13 @@ module.exports = {
       {
         test: /\.(ts|tsx|jsx)$/,
         loader: "ts-loader",
-        include: path.join(__dirname, "src/pipe_oc_assets"),
+        include: sourceDir,
       },
-      //  { test: /\.css$/, use: ['style-loader','css-loader'] }
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+        include: sourceDir,
+      },
     ],
   },
   plugins: [
