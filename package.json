@@ -19,6 +19,8 @@
     "@dfinity/agent": "0.10.3",
     "@dfinity/candid": "0.10.3",
     "@dfinity/principal": "0.10.3",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
     "assert": "2.0.0",
     "buffer": "6.0.3",
     "copy-webpack-plugin": "^9.0.1",
@@ -39,5 +41,9 @@
     "last 2 firefox version",
     "last 2 safari version",
     "last 2 edge version"
-  ]
+  ],
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }
